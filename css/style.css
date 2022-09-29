@@ -11,17 +11,19 @@ html {
 
 body {
     height: 100vh;
-    /* padding-top: 4rem; */
     background-color: black;
     overflow-y: hidden;
     padding-bottom: 6rem;
-    position: relative;
-   
 }
 
+/* general */
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 /* header - barra nera */
@@ -54,6 +56,7 @@ header {
 
 /* main - immages */
 main {
+    height: calc(100vh - 6rem - 6rem);
     overflow-y: auto;
 }
 
@@ -66,25 +69,29 @@ main {
     color: white;
 }
 
-.flex-main div {
-    flex: 1 1 160px;
+.card {
     position: relative;
-    margin-bottom: -0.4rem;
+    margin-bottom: 00.3rem;
+}
+
+.card img {
+    display: block;
+}
+
+.flex-main .card {
+    flex: 1 1 168px;
+    
 }
 
 .flex-main img {
     width: 100%;
 }
 
-.fa-table-cells-large {
-    filter: -1;
-}
-
 .pinco-pallo {
     background-color: rgba(101,113,124,255);
     width: 6.5rem;
     position: absolute;
-    bottom: 1.6rem;
+    bottom: 2px;
     left: 0;
 }
 
@@ -92,21 +99,25 @@ main {
 .flex-footer {
     background-color: rgba(34,34,34,255);
     display: flex;
-    position: fixed;
-    inset: auto 0 0 0;
+    flex-wrap: wrap;
     width: 100vw;
     height: 6rem;
-    flex-wrap: wrap;
+    
+    
 }
 
 .flex-footer i {
     font-size: 2rem;
 }
 
+.flex-footer .fa-angle-up {
+    font-size: 1rem;
+}
+
 .end-meeting {
     color: red;
     background-color: rgba(74,74,74,255);
-    padding: 2.4rem 1.5rem;
+    /* padding: 2.3rem 1.5rem; */
 }
 
 .fa-share-from-square {
@@ -133,8 +144,9 @@ main {
 
 .icon-right {
     display: flex;
+    align-items: stretch;
     flex-grow: 2;
     justify-content: flex-end;
-    align-items: center;
+    line-height: 6rem;
 }
 
